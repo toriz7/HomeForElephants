@@ -19,8 +19,6 @@ router.use(session({
 /*
 불가침 구역 끝
 */
-
-/*
 router.get('/login',function(req,res){
   console.log("로그인 페이지 접속")
   res.render('login')
@@ -29,19 +27,6 @@ router.get('/verify',function(req,res){
   console.log("로그인 페이지 접속2")
   res.render('login_naver_verify')
 });
-router.get('/community',function(req,res){
-  console.log("커뮤니티 접속")
-  res.render('community')
-});
-router.get('/categories',function(req,res){
-  console.log("카테고리 접속")
-  res.render('categories')
-});
-router.get('/about',function(req,res){
-  console.log("about 접속")
-  res.render('about')
-});
-*/
 router.get('/about',function(req,res){
   if(req.session.user){
     res.render('about',{email:req.session.user.email, name:req.session.user.name})

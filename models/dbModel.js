@@ -16,4 +16,4 @@ const BoardSchema = new mongoose.Schema({
 // Create Model & Export
 module.exports = mongoose.model('student_board', BoardSchema);
 
-db.student_board.insert({"userid":"toriz7","date":"2019-05-08","room_area":"17.5","location":"서애로","title":"히히","content":"굿굿","isGood":"true","howmayGood":"0"})
+//db.student_board.insert({"userid":"toriz7","date":"2019-05-08","room_area":"17.5","location":"서애로","title":"히히","content":"굿굿","isGood":"true","howmayGood":"0"})
