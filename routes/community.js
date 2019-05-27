@@ -26,7 +26,15 @@ router.get('/community',function(req,res){
     res.render('community',{email:null, name:null})
   }
 });
+router.get('/community_write',function(req,res){
+  if(req.session.user){
+    res.render('community_write',{email:req.session.user.email, name:req.session.user.name})
 
+    //console.log(req.session.user.email);
+  }else{
+    res.render('community_write',{email:null, name:null})
+  }
+});
 
 
 

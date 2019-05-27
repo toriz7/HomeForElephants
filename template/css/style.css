@@ -2104,7 +2104,14 @@ ol {
 .community-list {
 	margin-bottom: 40px;
 }
+/* Google Map API */
+#map{
+	width : auto;
+	height : 350px;
+}
+.map_read{
 
+}
 @media only screen and (max-width: 370px) {
 	.room-info .rf-left,
 	.room-info .rf-right {
