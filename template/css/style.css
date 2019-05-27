@@ -1590,7 +1590,9 @@ ol {
 /*-------------------------
   Blog & single Blog page
 --------------------------*/
-
+.blog-section {
+	background-color:#f5f5f5
+}
 .blog-page .blog-item {
 	margin-bottom: 50px;
 }
